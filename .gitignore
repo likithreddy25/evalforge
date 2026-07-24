@@ -1,0 +1,23 @@
+# Node / TypeScript CLI
+cli/node_modules/
+cli/dist/
+npm-debug.log*
+
+# Python engine
+__pycache__/
+*.pyc
+.pytest_cache/
+engine/.venv/
+engine/venv/
+
+# Env files (never commit real secrets)
+.env
+*.env
+!.env.example
+
+# OS
+.DS_Store
+
+# Reports / run output
+reports/*
+!reports/.gitkeep

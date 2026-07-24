@@ -1,0 +1,27 @@
+{
+  "name": "evalforge-cli",
+  "version": "0.1.0",
+  "description": "EvalForge CLI — evaluate RAG pipelines and LLM agents from the terminal",
+  "main": "dist/index.js",
+  "bin": {
+    "evalforge": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/index.ts",
+    "start": "node dist/index.js",
+    "lint": "eslint src --ext .ts"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "chalk": "^5.3.0",
+    "commander": "^11.1.0",
+    "ora": "^7.0.1",
+    "table": "^6.8.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.3.0"
+  }
+}

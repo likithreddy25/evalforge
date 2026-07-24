@@ -1,0 +1,17 @@
+[
+  {
+    "question": "What is retrieval-augmented generation?",
+    "expected_answer": "RAG is a technique that combines retrieval of relevant documents with LLM generation to produce grounded, factual responses.",
+    "context": "RAG pipelines retrieve relevant context from a vector store before generating answers."
+  },
+  {
+    "question": "What metrics are used to evaluate RAG retrieval quality?",
+    "expected_answer": "Common retrieval metrics include precision@k, recall@k, MRR, and NDCG.",
+    "context": "Retrieval evaluation measures how well a system finds relevant documents."
+  },
+  {
+    "question": "What is faithfulness in LLM evaluation?",
+    "expected_answer": "Faithfulness measures whether the generated answer is grounded in the provided context without hallucinating facts.",
+    "context": "LLM evaluation covers faithfulness, relevance, and coherence."
+  }
+]

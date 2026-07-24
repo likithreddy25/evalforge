@@ -1,0 +1,52 @@
+name: EvalForge CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test-engine:
+    name: Python Engine Tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        working-directory: engine
+        run: pip install -r requirements.txt
+
+      - name: Run pytest
+        working-directory: engine
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: pytest tests/ -v --tb=short
+
+  build-cli:
+    name: TypeScript CLI Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        working-directory: cli
+        run: npm install
+
+      - name: Build TypeScript
+        working-directory: cli
+        run: npm run build
+
+      - name: Verify CLI binary
+        working-directory: cli
+        run: node dist/index.js --version
