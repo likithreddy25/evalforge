@@ -28,6 +28,10 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: pytest tests/ -v --tb=short
 
+      - name: Run support-eval example tests
+        working-directory: engine
+        run: pytest ../examples/support_eval/tests -v --tb=short
+
   build-cli:
     name: TypeScript CLI Build
     runs-on: ubuntu-latest

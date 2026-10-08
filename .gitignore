@@ -21,3 +21,7 @@ engine/venv/
 # Reports / run output
 reports/*
 !reports/.gitkeep
+
+# Local ChromaDB data
+chroma_data/
+examples/support_eval/.chroma_policy/

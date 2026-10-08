@@ -36,4 +36,4 @@ async def evaluate_generation(
         expected=expected_answer,
         model=model,
     )
-    return scores
+    return {**scores, "answer": answer, "chunks": chunks}

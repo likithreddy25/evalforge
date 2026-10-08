@@ -30,6 +30,20 @@ class EvalMetrics(BaseModel):
     overall_score: float
 
 
+class ItemResult(BaseModel):
+    question: str
+    expected_answer: str
+    answer: str = ""
+    retrieved_chunks: list[str] = []
+    precision_at_k: float
+    recall_at_k: float
+    faithfulness: float
+    relevance: float
+    coherence: float
+    judge_reasoning: str = ""
+    judge_ok: bool = True
+
+
 class EvalRunResponse(BaseModel):
     run_id: str = Field(default_factory=lambda: str(uuid.uuid4()))
     status: str = "completed"
@@ -37,3 +51,5 @@ class EvalRunResponse(BaseModel):
     metrics: EvalMetrics
     total_queries: int
     duration_seconds: float
+    failed_queries: int = 0
+    items: list[ItemResult] = []

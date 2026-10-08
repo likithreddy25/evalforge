@@ -34,3 +34,16 @@ def test_normalize_mid():
 
 def test_normalize_invalid():
     assert _normalize("abc") == 0.5
+
+
+def test_parse_scores_reasoning_and_ok_flag():
+    text = "FAITHFULNESS: 2\nRELEVANCE: 4\nCOHERENCE: 5\nREASONING: Invents a 72-hour window: not in context."
+    scores = _parse_scores(text)
+    assert scores["judge_ok"] is True
+    assert scores["reasoning"] == "Invents a 72-hour window: not in context."
+
+
+def test_parse_scores_partial_marks_not_ok():
+    scores = _parse_scores("FAITHFULNESS: 4\nRELEVANCE: 5")
+    assert scores["judge_ok"] is False
+    assert scores["coherence"] == 0.5

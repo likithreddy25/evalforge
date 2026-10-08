@@ -9,6 +9,7 @@ from models.schemas import (
     EvalRunRequest,
     EvalRunResponse,
     EvalMetrics,
+    ItemResult,
 )
 from store.chroma import add_qa_pairs, get_all_qa_pairs, list_datasets
 from evaluators.retrieval import evaluate_retrieval
@@ -54,8 +55,14 @@ async def run_eval(req: EvalRunRequest):
     retrieval_scores = []
     generation_scores = []
 
-    # Run evals concurrently in batches of 5
+    # Run evals concurrently, at most 5 in flight (avoids API rate limits / RAG timeouts)
+    sem = asyncio.Semaphore(5)
+
     async def eval_pair(pair: dict):
+        async with sem:
+            return await _eval_pair(pair)
+
+    async def _eval_pair(pair: dict):
         r = await evaluate_retrieval(
             endpoint=req.rag_endpoint,
             question=pair["question"],
@@ -75,12 +82,28 @@ async def run_eval(req: EvalRunRequest):
     tasks = [eval_pair(p) for p in qa_pairs]
     results = await asyncio.gather(*tasks, return_exceptions=True)
 
-    for result in results:
+    items = []
+    failed = 0
+    for pair, result in zip(qa_pairs, results):
         if isinstance(result, Exception):
+            failed += 1
             continue
         r, g = result
         retrieval_scores.append(r)
         generation_scores.append(g)
+        items.append(ItemResult(
+            question=pair["question"],
+            expected_answer=pair["expected_answer"],
+            answer=g.get("answer", ""),
+            retrieved_chunks=r.get("retrieved_chunks", []),
+            precision_at_k=r["precision_at_k"],
+            recall_at_k=r["recall_at_k"],
+            faithfulness=g["faithfulness"],
+            relevance=g["relevance"],
+            coherence=g["coherence"],
+            judge_reasoning=g.get("reasoning", ""),
+            judge_ok=g.get("judge_ok", True),
+        ))
 
     n = len(retrieval_scores) or 1
     avg = lambda key, lst: sum(d[key] for d in lst) / len(lst) if lst else 0.0
@@ -109,6 +132,8 @@ async def run_eval(req: EvalRunRequest):
         metrics=metrics,
         total_queries=len(qa_pairs),
         duration_seconds=round(time.time() - start, 2),
+        failed_queries=failed,
+        items=items,
     )
     _run_store[run_id] = response
     return response

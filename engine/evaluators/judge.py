@@ -26,7 +26,8 @@ Score each axis from 1 to 5:
 Respond in this exact format:
 FAITHFULNESS: <score>
 RELEVANCE: <score>
-COHERENCE: <score>"""
+COHERENCE: <score>
+REASONING: <one or two sentences explaining the lowest score>"""
 
 
 async def judge_response(
@@ -47,25 +48,36 @@ async def judge_response(
             model=model,
             messages=[{"role": "user", "content": prompt}],
             temperature=0,
-            max_tokens=100,
+            max_tokens=250,
         )
         text = response.choices[0].message.content or ""
         return _parse_scores(text)
     except Exception:
         # Fallback scores if API unavailable
-        return {"faithfulness": 0.5, "relevance": 0.5, "coherence": 0.5}
+        return {"faithfulness": 0.5, "relevance": 0.5, "coherence": 0.5,
+                "reasoning": "", "judge_ok": False}
 
 
 def _parse_scores(text: str) -> dict:
     scores = {"faithfulness": 0.5, "relevance": 0.5, "coherence": 0.5}
-    for line in text.strip().splitlines():
-        line = line.strip().upper()
+    parsed = 0
+    reasoning = ""
+    for raw in text.strip().splitlines():
+        line = raw.strip().upper()
+        if line.startswith("REASONING:"):
+            reasoning = raw.strip()[len("REASONING:"):].strip()
+            continue
+        if line.startswith(("FAITHFULNESS:", "RELEVANCE:", "COHERENCE:")):
+            parsed += 1
         if line.startswith("FAITHFULNESS:"):
             scores["faithfulness"] = _normalize(line.split(":")[-1].strip())
         elif line.startswith("RELEVANCE:"):
             scores["relevance"] = _normalize(line.split(":")[-1].strip())
         elif line.startswith("COHERENCE:"):
             scores["coherence"] = _normalize(line.split(":")[-1].strip())
+    # judge_ok=False means at least one score is the 0.5 fallback, not a real judgment
+    scores["reasoning"] = reasoning
+    scores["judge_ok"] = parsed == 3
     return scores
 
 
