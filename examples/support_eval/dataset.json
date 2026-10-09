@@ -1,0 +1,1058 @@
+[
+  {
+    "question": "What is the refund policy if I need to cancel my booking more than 14 days in advance?",
+    "expected_answer": "You can request a full refund if you cancel your booking within 48 hours of booking, as long as your check-in date is at least 14 days away.",
+    "context": "",
+    "category": "refunds",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "If I cancel my booking 10 days before check-in, can I get a refund?",
+    "expected_answer": "Yes, if you cancel your booking between 7 to 14 days before check-in, you are eligible for a 50% refund of the total booking fee.",
+    "context": "",
+    "category": "refunds",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "What happens if I cancel my booking less than a week before check-in?",
+    "expected_answer": "No refunds will be issued for cancellations made less than 7 days before check-in unless under extenuating circumstances, which must be documented and submitted within 48 hours of cancellation.",
+    "context": "",
+    "category": "refunds",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "How do I submit a refund request?",
+    "expected_answer": "Refund requests must be submitted through the Nestly platform within the specified time frames to be considered.",
+    "context": "",
+    "category": "refunds",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "Can I get my money back if my host cancels my booking?",
+    "expected_answer": "Yes, you may receive a rebooking credit equivalent to the amount paid for canceled bookings by hosts.",
+    "context": "",
+    "category": "refunds",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "If I have a documented reason for cancelling less than a week before check-in, will I still get a refund?",
+    "expected_answer": "If you have documented extenuating circumstances and submit them within 48 hours of cancellation, you may be eligible for a refund even if you cancel less than 7 days before check-in.",
+    "context": "",
+    "category": "refunds",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "What if my refund request isn\u2019t resolved in time?",
+    "expected_answer": "For issues not resolved within 3 business days, you should escalate the matter to a human support agent.",
+    "context": "",
+    "category": "refunds",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "I canceled my booking yesterday. How long will it take to get my refund?",
+    "expected_answer": "The processing time for refunds may vary, but you should first check the refund request status through the Nestly platform to see any updates.",
+    "context": "",
+    "category": "refunds",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "Can I still get a refund if I missed the cancellation deadline?",
+    "expected_answer": "Unfortunately, no refunds will be issued for cancellations made after the deadline unless under extenuating circumstances with proper documentation submitted within 48 hours.",
+    "context": "",
+    "category": "refunds",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "I just canceled my booking, but I haven't submitted a refund request yet. Can I still get a refund?",
+    "expected_answer": "You'll need to submit your refund request through the Nestly platform within the specified time frames to be eligible for a refund.",
+    "context": "",
+    "category": "refunds",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "Is it true that I can request a full refund if I cancel within 48 hours?",
+    "expected_answer": "Yes, guests may request a full refund if they cancel within 48 hours of booking, and the check-in date is at least 14 days away.",
+    "context": "",
+    "category": "refunds",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "What documentation do I need to submit for an extenuating circumstance refund?",
+    "expected_answer": "You should provide evidence to support your claim for extenuating circumstances when submitting your refund request within 48 hours of cancellation.",
+    "context": "",
+    "category": "refunds",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "If my host cancels, am I entitled to anything beyond a rebooking credit?",
+    "expected_answer": "According to the policy, guests may only receive a rebooking credit equivalent to the amount paid for canceled bookings by hosts.",
+    "context": "",
+    "category": "refunds",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "Does the refund process take long if my case is complex?",
+    "expected_answer": "Nestly aims to address refund requests promptly, but if your issue is not resolved within 3 business days, you should escalate it to a human support agent.",
+    "context": "",
+    "category": "refunds",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "What if I booked and paid for a stay, but the host canceled at the last minute?",
+    "expected_answer": "If the host cancels within 48 hours of check-in, they will incur a penalty fee, but you are eligible for a rebooking credit for the amount paid.",
+    "context": "",
+    "category": "refunds",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "How can I ensure I'm eligible for a full refund?",
+    "expected_answer": "To be eligible for a full refund, make sure to cancel within 48 hours of booking, and ensure your check-in date is at least 14 days away.",
+    "context": "",
+    "category": "refunds",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "If I don\u2019t get a response to my refund request, what should I do?",
+    "expected_answer": "If your refund issue is not resolved within 3 business days, you should escalate the matter to a human support agent.",
+    "context": "",
+    "category": "refunds",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "I have an urgent situation and need to cancel my reservation. What will happen to my payment?",
+    "expected_answer": "If you cancel, please refer to our cancellation policy. If it's less than 7 days, no refund is available unless under documented extenuating circumstances.",
+    "context": "",
+    "category": "refunds",
+    "difficulty": "hard",
+    "hard_type": "ambiguous"
+  },
+  {
+    "question": "I understand the policy, but I'm hoping for a refund due to my exceptional situation. Can you make an exception?",
+    "expected_answer": "I understand your situation, but exceptions cannot be made outside of the documented extenuating circumstances outlined in our policy.",
+    "context": "",
+    "category": "refunds",
+    "difficulty": "hard",
+    "hard_type": "adversarial"
+  },
+  {
+    "question": "Can you tell me more about what qualifies as an extenuating circumstance for a refund?",
+    "expected_answer": "According to our policy, extenuating circumstances must be documented and submitted within 48 hours of cancellation. Specific categories are not detailed, so please provide the necessary evidence.",
+    "context": "",
+    "category": "refunds",
+    "difficulty": "hard",
+    "hard_type": "ambiguous"
+  },
+  {
+    "question": "I have a question about the cancellation policy that doesn't seem to relate to refunds. Can you help me?",
+    "expected_answer": "I can only provide information from our refund policy. For other inquiries about the cancellation policy, I will need to escalate the matter to a human support agent.",
+    "context": "",
+    "category": "refunds",
+    "difficulty": "hard",
+    "hard_type": "out_of_scope"
+  },
+  {
+    "question": "If I cancel my booking and change my mind before you process the refund, can I still get my money back?",
+    "expected_answer": "Once a cancellation is processed, you will need to follow the refund policy as outlined. If you have questions, I can escalate this to a human support agent.",
+    "context": "",
+    "category": "refunds",
+    "difficulty": "hard",
+    "hard_type": "out_of_scope"
+  },
+  {
+    "question": "Can I get a full refund if I cancel my booking within 48 hours?",
+    "expected_answer": "Yes, you can request a full refund if you cancel within 48 hours of booking, as long as your check-in date is at least 14 days away.",
+    "context": "",
+    "category": "cancellations",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "If I cancel between 7 to 14 days before check-in, how much will I get back?",
+    "expected_answer": "If you cancel your booking between 7 to 14 days before your check-in date, you will be eligible for a 50% refund of the total booking fee.",
+    "context": "",
+    "category": "cancellations",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "What is the cancellation policy for hosts?",
+    "expected_answer": "Hosts must notify guests of any cancellations at least 48 hours before the scheduled check-in to avoid penalties. If they cancel within 48 hours of check-in, they incur a penalty fee of 25% of the total booking amount.",
+    "context": "",
+    "category": "cancellations",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "How do I cancel my booking?",
+    "expected_answer": "You can cancel your booking directly via the Nestly app or website. The cancellation policy selected at the time of booking will apply.",
+    "context": "",
+    "category": "cancellations",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "If my host cancels my booking, what compensation will I receive?",
+    "expected_answer": "If your host cancels your booking, you may receive a rebooking credit equivalent to the amount paid for the canceled booking.",
+    "context": "",
+    "category": "cancellations",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "What if I need to cancel my reservation for a personal reason?",
+    "expected_answer": "You can cancel your reservation through the Nestly platform, but please refer to the cancellation policy for details on the potential refund based on your timing.",
+    "context": "",
+    "category": "cancellations",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "Is there a penalty if the host cancels on short notice?",
+    "expected_answer": "Yes, if a host cancels a booking within 48 hours of check-in, they will incur a penalty fee of 25% of the total booking amount.",
+    "context": "",
+    "category": "cancellations",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "How long does it take to process a cancellation?",
+    "expected_answer": "Cancellation processing time may vary, but refunds must be requested through the Nestly platform within the specified time frames to be considered.",
+    "context": "",
+    "category": "cancellations",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "What should I do if I haven't received my refund yet?",
+    "expected_answer": "If you haven't received your refund as expected, please allow up to 3 business days for issues to be resolved. If not resolved, escalate the matter to a human support agent.",
+    "context": "",
+    "category": "cancellations",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "Can my host cancel my booking at any time?",
+    "expected_answer": "Hosts are required to notify guests of any cancellations at least 48 hours prior to the scheduled check-in to avoid penalties. Cancellations made after this period incur a penalty fee.",
+    "context": "",
+    "category": "cancellations",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "Am I entitled to a refund if I cancel my booking after the 14-day mark?",
+    "expected_answer": "If you cancel your booking after the 14-day mark, you are not entitled to a refund unless you are within the 7 to 14-day window where you can receive a 50% refund.",
+    "context": "",
+    "category": "cancellations",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "What happens if I have to cancel due to an emergency?",
+    "expected_answer": "If you cancel under extenuating circumstances, you may be eligible for a refund, but you must document and submit your circumstances within 48 hours of cancellation.",
+    "context": "",
+    "category": "cancellations",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "Is there a way to expedite my cancellation request?",
+    "expected_answer": "Cancellation requests should be submitted through the Nestly platform within the time frames specified. If you have further issues, please contact support.",
+    "context": "",
+    "category": "cancellations",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "Can I change my cancellation policy after booking?",
+    "expected_answer": "The cancellation policy cannot be changed after booking. It is important to select the appropriate policy at the time of booking.",
+    "context": "",
+    "category": "cancellations",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "What do I do if there's an issue with my cancellation?",
+    "expected_answer": "If your cancellation issue is unresolved after 5 business days, please escalate it to a human support agent for further assistance.",
+    "context": "",
+    "category": "cancellations",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "If my host cancels, can I get a refund and a rebooking credit?",
+    "expected_answer": "If your host cancels the booking, you may receive a rebooking credit equivalent to the amount paid but will not receive a refund in that scenario.",
+    "context": "",
+    "category": "cancellations",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "If I want to cancel my reservation, what is the fastest way to do it?",
+    "expected_answer": "The fastest way to cancel your reservation is by using the Nestly app or website to submit your cancellation request immediately.",
+    "context": "",
+    "category": "cancellations",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "Can I cancel and get money back if my host has already been penalized?",
+    "expected_answer": "If your host has already been penalized, it does not affect your right to cancel and receive a refund based on the timing of your cancellation according to the policy.",
+    "context": "",
+    "category": "cancellations",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "I can't cancel my reservation now. Can you waive the cancellation fees?",
+    "expected_answer": "I\u2019m sorry, but I cannot waive any cancellation fees as per our policy. Cancellations must follow the established rules. Please review the cancellation policy for detailed information.",
+    "context": "",
+    "category": "cancellations",
+    "difficulty": "hard",
+    "hard_type": "adversarial"
+  },
+  {
+    "question": "If I don\u2019t provide a reason for cancellation, will I still get a partial refund?",
+    "expected_answer": "Can you please clarify your cancellation timing? The policy states that the refund amount depends on when you cancel\u2014more details will help determine eligibility.",
+    "context": "",
+    "category": "cancellations",
+    "difficulty": "hard",
+    "hard_type": "ambiguous"
+  },
+  {
+    "question": "What if I want to cancel my stay due to personal grievances not related to policy?",
+    "expected_answer": "I\u2019m sorry, but I cannot assist with personal grievances that are not related to Nestly's services. Please check the cancellation policy for your options regarding booking cancellation.",
+    "context": "",
+    "category": "cancellations",
+    "difficulty": "hard",
+    "hard_type": "out_of_scope"
+  },
+  {
+    "question": "I cancelled my booking last week, but it hasn\u2019t been processed yet. Can you expedite that?",
+    "expected_answer": "Unfortunately, I cannot expedite the processing of cancellations. It is advisable to check back in a few business days or escalate the matter to a human support agent if it remains unresolved.",
+    "context": "",
+    "category": "cancellations",
+    "difficulty": "hard",
+    "hard_type": "adversarial"
+  },
+  {
+    "question": "Can I get any money back if I cancel within two hours of booking?",
+    "expected_answer": "If you cancel your booking within 48 hours and your check-in date is at least 14 days away, you may be eligible for a full refund. Otherwise, please refer to the cancellation policy for further details.",
+    "context": "",
+    "category": "cancellations",
+    "difficulty": "hard",
+    "hard_type": "ambiguous"
+  },
+  {
+    "question": "What should I do if the host doesn't show up for check-in?",
+    "expected_answer": "If the host fails to show up for the scheduled check-in, you should wait for a maximum of 2 hours before seeking assistance. During this time, attempt to contact the host through the Nestly messaging system.",
+    "context": "",
+    "category": "host no-show",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "How long do I have to wait for my host to arrive?",
+    "expected_answer": "Guests should wait for a maximum of 2 hours if the host does not show up for check-in. After that, you can report the issue to Nestly customer support.",
+    "context": "",
+    "category": "host no-show",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "Can I get a refund if my host doesn\u2019t show up?",
+    "expected_answer": "Yes, if the host is unresponsive and you make a new booking elsewhere within 24 hours, you will be eligible for a full refund.",
+    "context": "",
+    "category": "host no-show",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "What if my host shows up late?",
+    "expected_answer": "The policy specifically addresses a host no-show. If your host is late but eventually arrives within the 2-hour waiting period, you would not be eligible for a refund.",
+    "context": "",
+    "category": "host no-show",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "I waited for 3 hours; what should I do now?",
+    "expected_answer": "You should report the issue to Nestly customer support since the waiting period is a maximum of 2 hours. Please provide them with the details of your situation.",
+    "context": "",
+    "category": "host no-show",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "How do I contact customer support about a host no-show?",
+    "expected_answer": "After waiting the required 2 hours, you can report the issue to Nestly customer support through the Nestly app or website.",
+    "context": "",
+    "category": "host no-show",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "If my host cancels last minute, what can I do?",
+    "expected_answer": "If your host cancels within 48 hours of check-in, they will incur a penalty fee, and you may receive a rebooking credit equivalent to the amount paid for the canceled booking.",
+    "context": "",
+    "category": "host no-show",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "Is there a way to prevent host no-shows?",
+    "expected_answer": "The policy doesn\u2019t cover prevention measures for host no-shows. You may want to communicate with your host before booking to ensure they are reliable.",
+    "context": "",
+    "category": "host no-show",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "What do I need to provide when reporting a host no-show?",
+    "expected_answer": "When reporting a host no-show, please provide details of your communication attempts and the time you waited, as this information will assist customer support.",
+    "context": "",
+    "category": "host no-show",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "Will I get reimbursed for my travel costs if the host is a no-show?",
+    "expected_answer": "The policy does not address reimbursement for travel costs due to a host no-show. You may need to discuss this further with a human support agent.",
+    "context": "",
+    "category": "host no-show",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "What if I'm having trouble contacting the host?",
+    "expected_answer": "You should still wait for a maximum of 2 hours while attempting to contact your host through the Nestly messaging system before reporting the issue to customer support.",
+    "context": "",
+    "category": "host no-show",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "If I make a new booking after a host no-show, how do I get my refund?",
+    "expected_answer": "You will be eligible for a full refund if the host is unresponsive and you make a new booking elsewhere within 24 hours. Ensure you follow the required steps to submit your refund request through the Nestly platform.",
+    "context": "",
+    "category": "host no-show",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "What happens if I miss the 2-hour waiting period?",
+    "expected_answer": "If you miss the 2-hour waiting period, you will not be able to report the no-show as per policy, and it may affect your eligibility for a refund.",
+    "context": "",
+    "category": "host no-show",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "Can I leave negative feedback for a host who no-shows?",
+    "expected_answer": "Yes, you can provide feedback on your experience with the host, which can help improve community standards.",
+    "context": "",
+    "category": "host no-show",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "What if my host is not responding to messages?",
+    "expected_answer": "You should wait for a maximum of 2 hours while attempting to contact the host. If they remain unresponsive after that, report the issue to Nestly customer support.",
+    "context": "",
+    "category": "host no-show",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "Is there any specific documentation I need for a host no-show?",
+    "expected_answer": "While the policy does not specify required documentation for a host no-show, having details of your communications and the time you waited will be helpful when reporting the issue.",
+    "context": "",
+    "category": "host no-show",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "If the host shows up after I reported the no-show, can I still get a refund?",
+    "expected_answer": "If you report the issue and the host shows up after your report, you may not be eligible for a refund since the policy requires the host to be unresponsive for the full 2-hour waiting period.",
+    "context": "",
+    "category": "host no-show",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "What should I do if I have safety concerns about my host?",
+    "expected_answer": "For any safety concerns, guests should immediately report them through the Nestly app and contact local authorities if urgent. This is separate from the host no-show procedure.",
+    "context": "",
+    "category": "host no-show",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "My friend said they found a host who is more reliable; can I change my booking?",
+    "expected_answer": "Changing your booking due to concerns about a host\u2019s reliability would generally involve cancellation and rebooking, depending on the cancellation policy applied at the time of booking.",
+    "context": "",
+    "category": "host no-show",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "If I believe the host was lying about their arrival, what can I do?",
+    "expected_answer": "The policy does not address disputes regarding a host's claims about their arrival. It is best to report the no-show following the established procedure.",
+    "context": "",
+    "category": "host no-show",
+    "difficulty": "hard",
+    "hard_type": "ambiguous"
+  },
+  {
+    "question": "Can you tell me if my host's behavior is against policy?",
+    "expected_answer": "I cannot determine if specific host behavior is against policy based on your description. Please provide me with more details, and I can guide you on the next steps.",
+    "context": "",
+    "category": "host no-show",
+    "difficulty": "hard",
+    "hard_type": "ambiguous"
+  },
+  {
+    "question": "I think my host's no-show was unfair; can I demand compensation?",
+    "expected_answer": "While I understand your frustration, I must adhere to the Nestly policy, which allows for a refund only under specific conditions related to host no-shows.",
+    "context": "",
+    "category": "host no-show",
+    "difficulty": "hard",
+    "hard_type": "adversarial"
+  },
+  {
+    "question": "I need my host to be removed permanently for not showing up. Can you fix this?",
+    "expected_answer": "I cannot take action on individual host accounts. I recommend reporting your experience to Nestly customer support so they can address it appropriately.",
+    "context": "",
+    "category": "host no-show",
+    "difficulty": "hard",
+    "hard_type": "out_of_scope"
+  },
+  {
+    "question": "What can I do if I\u2019m still waiting after 2 hours?",
+    "expected_answer": "If you are still waiting after 2 hours, you should report the host no-show to Nestly customer support immediately to initiate the resolution process.",
+    "context": "",
+    "category": "host no-show",
+    "difficulty": "hard",
+    "hard_type": "ambiguous"
+  },
+  {
+    "question": "What should I do if I have a safety concern at my rental?",
+    "expected_answer": "You should immediately report any safety concerns through the Nestly app, providing details and evidence where possible. For urgent safety issues, please contact local authorities before notifying Nestly.",
+    "context": "",
+    "category": "safety concern",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "How quickly will Nestly respond to my safety concern report?",
+    "expected_answer": "Nestly will respond to safety concerns within 24 hours after the initial report.",
+    "context": "",
+    "category": "safety concern",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "What if my safety concern is not resolved?",
+    "expected_answer": "If there is an ongoing safety issue, you should escalate to a human support agent without delay.",
+    "context": "",
+    "category": "safety concern",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "Can I report a safety issue after hours?",
+    "expected_answer": "You can report a safety concern through the Nestly app at any time. However, if it is an urgent safety issue, please contact local authorities immediately before notifying Nestly.",
+    "context": "",
+    "category": "safety concern",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "What details should I include when reporting a safety concern?",
+    "expected_answer": "When reporting a safety concern, provide as much detail and evidence as possible. This helps us address the issue effectively.",
+    "context": "",
+    "category": "safety concern",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "What if I suspect that my host is behaving dangerously?",
+    "expected_answer": "You should report any safety concerns immediately through the Nestly app, providing details and evidence. If it is urgent, contact local authorities first.",
+    "context": "",
+    "category": "safety concern",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "How do I escalate a safety concern report?",
+    "expected_answer": "If your safety concern is not resolved, escalate the issue to a human support agent without delay through the Nestly platform.",
+    "context": "",
+    "category": "safety concern",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "Is there a specific format for reporting safety concerns?",
+    "expected_answer": "While there is no specific format, it is important to provide detailed information and any relevant evidence when reporting a safety concern through the Nestly app.",
+    "context": "",
+    "category": "safety concern",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "What kinds of safety concerns should I report?",
+    "expected_answer": "You should report any safety concerns that may put you or others at risk, such as unsafe conditions or suspicious behavior, through the Nestly app.",
+    "context": "",
+    "category": "safety concern",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "If I'm in immediate danger, what should I do?",
+    "expected_answer": "If you are in immediate danger, please contact local authorities right away before notifying Nestly of the situation.",
+    "context": "",
+    "category": "safety concern",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "After I report a safety concern, what happens next?",
+    "expected_answer": "After you report a safety concern, Nestly will investigate and respond within 24 hours to address the issue.",
+    "context": "",
+    "category": "safety concern",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "I reported a safety issue but haven't heard back. What should I do?",
+    "expected_answer": "Nestly typically responds within 24 hours. If you have not heard back and the issue is ongoing, you should escalate to a human support agent.",
+    "context": "",
+    "category": "safety concern",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "What kind of evidence should I provide for safety concerns?",
+    "expected_answer": "When reporting safety concerns, provide any relevant evidence such as photos, messages, or descriptions that support your claim.",
+    "context": "",
+    "category": "safety concern",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "What if my safety concern involves illegal activity?",
+    "expected_answer": "In case of illegal activity, contact local authorities immediately. Then, report the issue to Nestly with as many details as possible through the app.",
+    "context": "",
+    "category": "safety concern",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "What should I do if I see something suspicious at my rental?",
+    "expected_answer": "You should report any suspicious activity or safety concerns through the Nestly app as soon as possible and contact local authorities if necessary.",
+    "context": "",
+    "category": "safety concern",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "Are there times when I shouldn\u2019t report safety concerns?",
+    "expected_answer": "You should report any safety concerns immediately. If it is an urgent matter, always contact local authorities first before notifying Nestly.",
+    "context": "",
+    "category": "safety concern",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "I saw something unsafe but I'm not sure if I should report it. What should I do?",
+    "expected_answer": "If you see something you believe is unsafe, it's better to report it through the Nestly app. Provide as much detail as possible for us to assess the situation.",
+    "context": "",
+    "category": "safety concern",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "Can I share feedback about safety concerns after reporting them?",
+    "expected_answer": "Yes, you can provide feedback on safety concerns to improve community standards even after reporting them through the app.",
+    "context": "",
+    "category": "safety concern",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "I want to speak with someone about my safety concern immediately; can you help?",
+    "expected_answer": "I can assist you by ensuring you report the safety concern through the Nestly app. For direct conversation, escalate this matter to a human support agent for immediate assistance.",
+    "context": "",
+    "category": "safety concern",
+    "difficulty": "hard",
+    "hard_type": "out_of_scope"
+  },
+  {
+    "question": "What if my safety concern is not serious? Should I still report it?",
+    "expected_answer": "While it may not seem serious, it's recommended to report any safety concerns you have through the Nestly app to ensure all issues are addressed.",
+    "context": "",
+    "category": "safety concern",
+    "difficulty": "hard",
+    "hard_type": "ambiguous"
+  },
+  {
+    "question": "I expect an immediate response regarding a minor safety issue; why is that not happening?",
+    "expected_answer": "Nestly responds to safety concerns within 24 hours. While I understand your concern, we adhere to this timeline to thoroughly assess each issue.",
+    "context": "",
+    "category": "safety concern",
+    "difficulty": "hard",
+    "hard_type": "adversarial"
+  },
+  {
+    "question": "I was advised to resolve an ongoing safety situation without delay; can you tell me what that means?",
+    "expected_answer": "This means that if there is an ongoing safety issue, you should escalate to a human support agent for swift assistance. Please ensure you provide detailed information.",
+    "context": "",
+    "category": "safety concern",
+    "difficulty": "hard",
+    "hard_type": "ambiguous"
+  },
+  {
+    "question": "My situation is an emergency; I need you to respond faster than 24 hours.",
+    "expected_answer": "In the case of an emergency, please contact local authorities immediately. I recommend reporting your concern through the Nestly app as well for further follow-up.",
+    "context": "",
+    "category": "safety concern",
+    "difficulty": "hard",
+    "hard_type": "adversarial"
+  },
+  {
+    "question": "I've forgotten my password. How can I regain access to my account?",
+    "expected_answer": "You can reset your password using the 'Forgot Password?' link on the login page.",
+    "context": "",
+    "category": "account access",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "My account is locked after too many failed login attempts. What should I do?",
+    "expected_answer": "You can regain access to your account after 30 minutes, or by following the verification process.",
+    "context": "",
+    "category": "account access",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "I created my account but can't log in. What\u2019s the issue?",
+    "expected_answer": "You may need to verify your email address within 48 hours of account creation, or it could result in account suspension.",
+    "context": "",
+    "category": "account access",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "How can I ensure my account is secure?",
+    "expected_answer": "It is recommended to enable two-factor authentication for added security on your account.",
+    "context": "",
+    "category": "account access",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "Why can't I log in to my account?",
+    "expected_answer": "If you\u2019re unable to log in, it could be due to a forgotten password or a locked account from multiple failed attempts. Please try resetting your password or waiting 30 minutes.",
+    "context": "",
+    "category": "account access",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "I forgot my password, but I can't find the reset link. What should I do?",
+    "expected_answer": "You will need to use the 'Forgot Password?' link to initiate a password reset process.",
+    "context": "",
+    "category": "account access",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "Can you help me unlock my account? I've been waiting for an hour.",
+    "expected_answer": "I'm sorry, but users can only regain access after 30 minutes or through the verification process. Please check back again if you're still locked out.",
+    "context": "",
+    "category": "account access",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "I didn't receive the email to verify my account. What now?",
+    "expected_answer": "Please ensure you check your spam or junk folder. If you still can't find it, you may need to create a new account.",
+    "context": "",
+    "category": "account access",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "How do I reset my password if I can\u2019t receive the email?",
+    "expected_answer": "If you are unable to receive the reset email, please check your email settings and ensure you can receive messages from Nestly. Otherwise, you may need to escalate to a human support agent.",
+    "context": "",
+    "category": "account access",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "What happens if I don't verify my email within 48 hours?",
+    "expected_answer": "Failure to verify your email address within 48 hours may result in account suspension.",
+    "context": "",
+    "category": "account access",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "Is there a way to change my email address linked to my account?",
+    "expected_answer": "The policy does not cover changing email addresses. Please refer to the account management section on the platform or escalate to a human support agent for assistance.",
+    "context": "",
+    "category": "account access",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "If I can't access my account after following the reset instructions, what should I do?",
+    "expected_answer": "If the issue persists after following the reset instructions, please escalate to a human support agent for further assistance.",
+    "context": "",
+    "category": "account access",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "Can I have someone else access my account on my behalf?",
+    "expected_answer": "The policy does not allow sharing your account access with others. It\u2019s advised to keep your login information confidential.",
+    "context": "",
+    "category": "account access",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "I\u2019ve received a suspicious email claiming to be from Nestly. What do I do?",
+    "expected_answer": "If you suspect an email is suspicious, please do not click on any links. Report the email to Nestly customer support for verification.",
+    "context": "",
+    "category": "account access",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "What if I can't remember my email address linked to my account?",
+    "expected_answer": "If you're unable to remember the email address associated with your account, you will need to escalate to a human support agent for assistance.",
+    "context": "",
+    "category": "account access",
+    "difficulty": "hard",
+    "hard_type": "ambiguous"
+  },
+  {
+    "question": "I heard I can get support for account issues, but there are too many options. I want the best one without a password.",
+    "expected_answer": "I'm sorry, but to address account access issues, you'll need to follow the standard procedure, which includes resetting your password using the 'Forgot Password?' link.",
+    "context": "",
+    "category": "account access",
+    "difficulty": "hard",
+    "hard_type": "adversarial"
+  },
+  {
+    "question": "Since I'm a proactive user, can I skip verifying my email?",
+    "expected_answer": "Verification of your email is a requirement. If you do not verify within 48 hours, your account may be suspended.",
+    "context": "",
+    "category": "account access",
+    "difficulty": "hard",
+    "hard_type": "adversarial"
+  },
+  {
+    "question": "If I provide my account information, can you unlock it for me?",
+    "expected_answer": "I'm sorry, but I cannot unlock accounts or make changes based on provided information. Please follow the reset process or wait for 30 minutes if locked.",
+    "context": "",
+    "category": "account access",
+    "difficulty": "hard",
+    "hard_type": "adversarial"
+  },
+  {
+    "question": "I'm having technical issues and can't follow the password reset steps. What can you do for me?",
+    "expected_answer": "Unfortunately, the policy does not cover technical issues with devices or software not related to the Nestly platform. I recommend escalating to a human support agent for assistance.",
+    "context": "",
+    "category": "account access",
+    "difficulty": "hard",
+    "hard_type": "out_of_scope"
+  },
+  {
+    "question": "Can I change my password from another device?",
+    "expected_answer": "You can change your password from any device using the 'Forgot Password?' link as long as you have access to your email or verification methods.",
+    "context": "",
+    "category": "account access",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "I can't seem to log into my account even after resetting my password. What should I do?",
+    "expected_answer": "If you are still unable to log in after resetting your password, please escalate to a human support agent for further assistance.",
+    "context": "",
+    "category": "account access",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "How can I initiate a payment dispute for a recent transaction?",
+    "expected_answer": "You can initiate a payment dispute within 14 days of the transaction date. Please submit the necessary documentation through the Nestly platform for review.",
+    "context": "",
+    "category": "payment dispute",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "What happens if I don't receive my refund after I raised a dispute?",
+    "expected_answer": "Nestly will investigate and respond to payment disputes within 5 business days. If a resolution is not reached within 7 business days, please escalate to a human support agent for further assistance.",
+    "context": "",
+    "category": "payment dispute",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "Is there a fee for processing my refund after a payment dispute?",
+    "expected_answer": "Yes, all financial transactions are subject to a 3% processing fee for refunds.",
+    "context": "",
+    "category": "payment dispute",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "I submitted a payment dispute but haven't heard back for 6 days. What should I do?",
+    "expected_answer": "Nestly will typically respond within 5 business days. If you haven\u2019t received a response, please escalate the matter to a human support agent for further assistance.",
+    "context": "",
+    "category": "payment dispute",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "Can I dispute a payment if I changed my mind about the booking?",
+    "expected_answer": "You can only initiate a payment dispute within 14 days of the transaction date, and it must be based on valid grounds as outlined in Nestly\u2019s policy.",
+    "context": "",
+    "category": "payment dispute",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "What kind of documentation do I need to submit for a payment dispute?",
+    "expected_answer": "You must provide documentation supporting your dispute when you submit it through the Nestly platform. The specifics can vary depending on the nature of the dispute.",
+    "context": "",
+    "category": "payment dispute",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "I disputed a payment, but it was denied. Can I dispute it again?",
+    "expected_answer": "Once a payment dispute is resolved, you cannot reopen that same dispute. However, if you have new evidence or a different issue, you may initiate a new dispute within the 14-day window.",
+    "context": "",
+    "category": "payment dispute",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "How long do I have to wait after disputing a payment before I get a reply?",
+    "expected_answer": "Nestly will investigate and respond to payment disputes within 5 business days. If you do not hear back within that timeframe, please escalate the issue.",
+    "context": "",
+    "category": "payment dispute",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "If I did not initiate the payment dispute myself, can I still be involved?",
+    "expected_answer": "The payment dispute process must be initiated by either guests or hosts directly affected by the transaction. If you're not the one who initiated the dispute, you may not have access to the details.",
+    "context": "",
+    "category": "payment dispute",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "Can I escalate a payment dispute without waiting for the initial response?",
+    "expected_answer": "If a resolution is not reached within 7 business days of initiating the dispute, you can escalate the matter to a human support agent for further assistance.",
+    "context": "",
+    "category": "payment dispute",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "What should I do if I believe I\u2019ve been wrongly charged for a booking?",
+    "expected_answer": "If you believe you\u2019ve been wrongly charged, you can initiate a payment dispute within 14 days of the transaction date and submit the relevant documentation through the Nestly platform.",
+    "context": "",
+    "category": "payment dispute",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "I need help with a payment dispute, but I don't have any documents. What can I do?",
+    "expected_answer": "You will need to provide documentation supporting your dispute when submitting it through the Nestly platform. Please gather any available evidence related to the transaction.",
+    "context": "",
+    "category": "payment dispute",
+    "difficulty": "hard",
+    "hard_type": "ambiguous"
+  },
+  {
+    "question": "My payment dispute is being investigated, but I need a refund now. Can you help?",
+    "expected_answer": "The payment dispute process must be followed, and Nestly will investigate and respond to it within 5 business days. Unfortunately, I cannot expedite the process or provide a refund before the investigation is complete.",
+    "context": "",
+    "category": "payment dispute",
+    "difficulty": "hard",
+    "hard_type": "adversarial"
+  },
+  {
+    "question": "Why can\u2019t I just get a refund immediately for the payment I disputed?",
+    "expected_answer": "The Nestly policy requires investigation of payment disputes, which takes time. Refunds are processed only after the dispute is resolved, typically within 5 business days.",
+    "context": "",
+    "category": "payment dispute",
+    "difficulty": "hard",
+    "hard_type": "adversarial"
+  },
+  {
+    "question": "Can I dispute a payment that was made more than 14 days ago?",
+    "expected_answer": "No, you can only initiate a payment dispute within 14 days of the transaction date. If it exceeds 14 days, unfortunately, you will not be able to dispute it.",
+    "context": "",
+    "category": "payment dispute",
+    "difficulty": "hard",
+    "hard_type": null
+  },
+  {
+    "question": "I\u2019m having trouble submitting my payment dispute documentation. What should I do?",
+    "expected_answer": "If you're facing issues with submitting your documentation, please check your internet connection or try accessing the Nestly platform from a different device. If the problem persists, escalate the issue to a human support agent for assistance.",
+    "context": "",
+    "category": "payment dispute",
+    "difficulty": "hard",
+    "hard_type": "out_of_scope"
+  },
+  {
+    "question": "What if my payment dispute is due to fraud?",
+    "expected_answer": "If your dispute is related to fraudulent activity, please submit your documentation within the 14-day window and report the issue to Nestly. Nestly will investigate it as per the payment dispute policy.",
+    "context": "",
+    "category": "payment dispute",
+    "difficulty": "normal",
+    "hard_type": null
+  },
+  {
+    "question": "Can I request to waive the 3% processing fee for my refund?",
+    "expected_answer": "Unfortunately, the 3% processing fee for refunds is standard policy, and exceptions cannot be made in individual cases.",
+    "context": "",
+    "category": "payment dispute",
+    "difficulty": "hard",
+    "hard_type": "adversarial"
+  },
+  {
+    "question": "What if my payment dispute involves a technical issue with the Nestly platform?",
+    "expected_answer": "If your payment dispute stems from a technical issue, please provide the necessary documentation as per the policy. However, if the issue is unrelated to the transaction, I am unable to assist with technical problems.",
+    "context": "",
+    "category": "payment dispute",
+    "difficulty": "hard",
+    "hard_type": "out_of_scope"
+  }
+]

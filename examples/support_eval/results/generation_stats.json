@@ -1,0 +1,7 @@
+{
+  "input": 133,
+  "dropped_empty": 0,
+  "dropped_duplicate": 1,
+  "kept": 132,
+  "hard": 32
+}
