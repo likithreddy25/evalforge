@@ -144,7 +144,8 @@ Expected response (any of these formats work):
 | `rag_app.py` | A tiny FastAPI RAG app over `policy_docs.md`. It uses the engine's ChromaDB setup and implements the endpoint contract (`POST /query` returns `answer` and `chunks`). |
 | `run_eval.py` | Loads the dataset into the engine, runs the eval and saves the raw report to `results/run_<id>.json`. |
 | `analyze_failures.py` | Mean scores by category, difficulty and hard-item type, the 10 lowest-scoring items with the judge's reasoning, and rule-based failure-mode counts. Writes `results/summary.md` and `results/hand_labels.csv` (20 random items) and refreshes the results block below. |
-| `judge_agreement.py` | Judge-vs-human agreement after you fill in the `human_*` columns of `hand_labels.csv`. |
+| `judge_agreement.py` | Judge-vs-human agreement for one or more hand-label CSVs, with 95% bootstrap CIs. |
+| `make_hard_labels.py` | Draws the harder set 2 sample (`results/hand_labels_set2.csv`) for hand labelling. |
 
 To support per-item analysis, the engine's run report now also has an `items` list (per-item scores, RAG answer, retrieved chunks, judge reasoning and a `judge_ok` flag) and a `failed_queries` count. The judge prompt asks for a one-line `REASONING`, and the engine runs at most 5 items at a time. The existing aggregate `metrics` are computed the same way as before.
 
@@ -231,17 +232,30 @@ Run `72d1c984-7286-42fd-a758-65b2c1163246` — 132 items, 0 failed requests, 0 u
 
 <!-- support-eval-results:end -->
 
-**Judge vs. human agreement**
+### Judge validation
 
-The repo author hand-labeled 20 random items (`results/hand_labels.csv`) on the same 1–5 scale. The table is the output of `judge_agreement.py`:
+These sections check how far the LLM judge's 1–5 scores agree with one human labeller (the repo author). There are two hand-labeled sets. **They used different reference contexts, so they are reported separately.**
 
-| axis | n | exact | within ±1 | mean abs diff | kappa (pass ≥4) |
-|---|---|---|---|---|---|
-| faithfulness | 20 | 0.55 | 0.90 | 0.55 | 0.00 |
-| relevance | 20 | 0.55 | 0.85 | 0.70 | 0.32 |
-| coherence | 20 | 0.60 | 0.90 | 0.50 | 0.35 |
+| Set | File | Items | Labeled against |
+|---|---|---|---|
+| 1 | `results/hand_labels.csv` | 20 random items | The full policy document (`policy_docs.md`) |
+| 2 | `results/hand_labels_set2.csv` | 15 new items, stratified toward hard cases | Only `retrieved_context`, the chunks the judge saw |
 
-The judge is usually within one point of the human. But its pass/fail calls (score of 4 or more) agree with the human's only slightly better than chance for relevance and coherence, and no better than chance for faithfulness (kappa 0.00). With n=20, all of these figures are very noisy.
+**Set 1 results** (output of `judge_agreement.py`, n=20 per axis)
+
+| axis | exact | within ±1 | mean abs diff | kappa (pass ≥4) | bias (judge − human) | judge mean | human mean |
+|---|---|---|---|---|---|---|---|
+| faithfulness | 0.55 | 0.90 | 0.55 | 0.00 | −0.25 | 4.50 | 4.75 |
+| relevance | 0.55 | 0.85 | 0.70 | 0.32 | +0.10 | 4.55 | 4.45 |
+| coherence | 0.60 | 0.90 | 0.50 | 0.35 | +0.40 | 4.70 | 4.30 |
+
+On these 20 items, the judge scored coherence higher than the human did and faithfulness slightly lower. Relevance is roughly unbiased.
+
+**Why kappa is low here (the ceiling effect).** Kappa measures agreement on pass (score ≥ 4) versus fail beyond what chance would give. When almost every item passes, chance agreement is already close to 1, so a single disagreement on one of the few "fails" moves kappa a lot. Set 1 is mostly passes. For faithfulness, every human score in `hand_labels.csv` is 4 or 5, so the human never marks a "fail". In that case kappa is 0 no matter how closely the judge tracks the human. Faithfulness kappa 0.00 therefore says little about the judge. Exact, within-1 and bias are more informative for set 1, and with n=20 all of them are noisy.
+
+**Set 2: a harder sample.** `make_hard_labels.py` draws 15 items that are not in set 1 from the same run report, using a fixed seed. It aims for 5 out-of-scope items, 5 ambiguous or adversarial items, and 5 normal items where the judge gave a 3 or below on at least one axis. This puts more likely "fails" into the sample, which is what kappa needs. Set 2 is labeled against `retrieved_context` only, not the full policy. The context then matches what the judge saw, so a disagreement reflects scoring rather than different information. The labelling instructions are in the header of `make_hard_labels.py`.
+
+**Set 2 results: pending.** Set 2 has not been labeled yet. Once it is, `judge_agreement.py results/hand_labels.csv results/hand_labels_set2.csv` generates the results for each set and for both combined. Each metric comes with a 95% bootstrap confidence interval (2000 resamples, fixed seed), plus the share of items both raters scored 4–5. No set 2 numbers will appear here until that has been run on real labels.
 
 ### Limitations
 
@@ -251,7 +265,7 @@ The judge is usually within one point of the human. But its pass/fail calls (sco
 - **Same model family.** The generator, the RAG app's answer model and the judge are all gpt-4o-mini. This likely inflates agreement between the expected answers, the generated answers and the judge's notion of "good".
 - **Crude retrieval metrics.** Precision and recall@k use token overlap between each chunk and the expected answer (threshold 0.3). Out-of-scope items have recall near 0 by construction, because their expected answer is an escalation message. That's why the table breaks results down by hard-item type and why `wrong_retrieval` excludes those items.
 - **Heuristic failure modes.** Failure modes come from regex and threshold rules. They are not human-verified, and one item can match several.
-- **Judge agreement is weak and comes from one labeller.** The agreement check above uses 20 items labeled by one person. It shows the judge's pass/fail calls agree with a human's at little better than chance (kappa 0.00–0.35), so treat the judge scores in this section as rough signals.
+- **Judge validation is thin.** Set 1 has 20 items labeled by one person and is dominated by passes, so kappa is unreliable there (see Judge validation). Set 2, the harder sample, is pending. Treat the judge scores in this section as rough signals.
 
 The code for this example was written with the help of Claude (Anthropic) via Claude Code.
 
