@@ -299,3 +299,5 @@ CI runs on every push via GitHub Actions — see `.github/workflows/ci.yml`.
 ## License
 
 MIT
+
+![MCP demo](docs/mcp-demo.png)
